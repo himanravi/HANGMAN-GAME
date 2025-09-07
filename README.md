@@ -1,4 +1,4 @@
-# Hangman Game  классическая игра палач
+# Hangman Game  
 
 A classic, browser-based Hangman word-guessing game built with vanilla HTML, CSS, and JavaScript. This project features dynamic word and hint generation, an interactive on-screen keyboard, and a clean, responsive interface.
 
