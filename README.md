@@ -64,6 +64,8 @@ cd HANGMAN-GAME
 2️⃣ Open in Browser
 Simply open index.html in your browser or run via Live Server in VS Code.
 
+📸 Screenshots
+<p align="center"> <img src="./assets/gameplay.png" alt="Gameplay Screenshot" width="400"/> <img src="./assets/gameover.png" alt="Game Over Screenshot" width="400"/> </p>
 🛠️ Built With
 ⚡ HTML5 – structure
 
