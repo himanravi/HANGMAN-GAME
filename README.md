@@ -44,9 +44,7 @@ The **Hangman Game** is a fun and interactive browser-based game built with
 │   └── script.js       # Game logic & interactivity
 ├── assets/             # Images, SVGs, gifs
 └── hangman-game-word-list.txt  # Backup of word list
----
 
-## 📄 Game📄
 ⚡ Features
 🎨 Responsive, dark-friendly UI
 
