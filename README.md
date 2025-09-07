@@ -1,84 +1,88 @@
-<!-- Dark Mode Pro README for Hangman Game -->
+# 🎯 Hangman Game
 
-<h1 align="center">🎯 Hangman Game</h1>
-
-<p align="center">
-  <i>A modern take on the classic word-guessing game</i>  
-</p>
+*Modern take on the classic word-guessing game built with HTML, CSS & Vanilla JavaScript.*
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-HTML5-orange?style=for-the-badge&logo=html5" />
-  <img src="https://img.shields.io/badge/Styled%20with-CSS3-blue?style=for-the-badge&logo=css3" />
-  <img src="https://img.shields.io/badge/Powered%20by-JavaScript-yellow?style=for-the-badge&logo=javascript" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/license/himanravi/HANGMAN-GAME?style=for-the-badge" />
-  <img src="https://img.shields.io/github/stars/himanravi/HANGMAN-GAME?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/github/forks/himanravi/HANGMAN-GAME?style=for-the-badge&logo=git" />
+  <img src="https://img.shields.io/badge/Made%20with-HTML5-orange?style=for-the-badge&logo=html5" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/Styled%20with-CSS3-blue?style=for-the-badge&logo=css3" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/Powered%20by-JavaScript-yellow?style=for-the-badge&logo=javascript" alt="JavaScript"/>
+  <img src="https://img.shields.io/github/license/himanravi/HANGMAN-GAME?style=for-the-badge" alt="License"/>
+  <img src="https://img.shields.io/github/stars/himanravi/HANGMAN-GAME?style=for-the-badge&logo=github" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/himanravi/HANGMAN-GAME?style=for-the-badge&logo=git" alt="Forks"/>
 </p>
 
 ---
 
-## 🌑 About the Project
+## 🌑 About
 
-The **Hangman Game** is a fun and interactive browser-based game built with  
-**HTML, CSS, and Vanilla JavaScript**.  
-
-🔹 Guess the hidden word one letter at a time.  
-🔹 Use the on-screen keyboard to play.  
-🔹 Get hints for tricky words.  
-🔹 Watch the hangman progress with each wrong guess.  
-🔹 Win 🎉 or lose 💀 with animated GIFs and a game-over modal.  
+A lightweight, client-side **Hangman** game. Guess the hidden word one letter at a time using the on-screen keyboard.  
+Each wrong guess advances the hangman illustration — guess the full word before the man is complete!  
+Every word has a hint to help the player. Designed to be responsive and mobile-friendly.
 
 ---
 
 ## 📂 Project Structure
 
-```bash
+```text
 📦 HANGMAN-GAME
-├── index.html          # Game UI structure
-├── style.css           # Styling & responsiveness
+├── index.html                     # Game UI / markup (modal, container, keyboard)
+├── style.css                      # Styling, layout, responsiveness
 ├── scripts/
-│   ├── word-list.js    # Word bank + hints
-│   └── script.js       # Game logic & interactivity
-├── assets/             # Images, SVGs, gifs
-└── hangman-game-word-list.txt  # Backup of word list
-
+│   ├── word-list.js               # Word bank (array of { word, hint })
+│   └── script.js                  # Game logic: selection, input, win/lose, UI updates
+├── assets/
+│   ├── hangman-0.svg … hangman-6.svg  # Hangman stage images (SVG)
+│   ├── victory.gif / lost.gif      # Game over animations
+│   └── screenshots/                # optional preview images
+└── hangman-game-word-list.txt      # optional backup of word list
 ⚡ Features
-🎨 Responsive, dark-friendly UI
+🎨 Clean, dark-friendly UI layout
 
-🧩 Random word selection with hints
+🧩 Random word selection with helpful hints
 
-🎮 Interactive on-screen keyboard
+🎮 Interactive on-screen keyboard (A–Z)
 
-🔄 Restart anytime with Play Again
+🔄 Play Again resets the game with a new word
 
-📱 Mobile-friendly layout
+📱 Responsive for mobile & desktop
 
 🚀 Getting Started
-1️⃣ Clone the Repository
+1. Clone
 bash
 Copy code
 git clone https://github.com/himanravi/HANGMAN-GAME.git
 cd HANGMAN-GAME
-2️⃣ Open in Browser
-Simply open index.html in your browser or run via Live Server in VS Code.
+2. Run
+Open index.html in your browser or serve the folder with Live Server in VS Code.
 
 📸 Screenshots
-<p align="center"> <img src="./assets/gameplay.png" alt="Gameplay Screenshot" width="400"/> <img src="./assets/gameover.png" alt="Game Over Screenshot" width="400"/> </p>
+<p align="center"> <!-- replace with real images in /assets --> <img src="./assets/gameplay.png" alt="Gameplay Screenshot" width="420"/> <img src="./assets/gameover.png" alt="Game Over Screenshot" width="420"/> </p>
+If images don’t show, make sure ./assets/ contains the named files (gameplay.png, gameover.png).
+
 🛠️ Built With
-⚡ HTML5 – structure
+HTML5 — structure and semantic markup
 
-🎨 CSS3 – styling & responsiveness
+CSS3 — styling and responsive layout
 
-🧠 JavaScript (ES6) – game logic
+JavaScript (ES6) — game logic, event handling, DOM updates
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to fork this repo and submit a pull request.
+Contributions are welcome! Suggested workflow:
 
+Fork the repo
+
+Create a feature branch: git checkout -b feat/my-feature
+
+Commit changes: git commit -m "feat: add …"
+
+Push and open a PR
+
+Please keep changes small & focused. Add new words to scripts/word-list.js as objects:
+
+js
+Copy code
+{ word: "guitar", hint: "A string instrument" }
 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License — see LICENSE for details.
 
-<p align="center"> Made with ❤️ using <b>HTML, CSS & JavaScript</b> </p> ```
+<p align="center">Made with ❤️ using <b>HTML, CSS & JavaScript</b></p> ```
